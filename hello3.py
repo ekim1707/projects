@@ -1,0 +1,5 @@
+name = input('What is your name? ')
+strname = str(name)
+subject = input('What is your favorite subject in school? ')
+strsubject = str(subject)
+print(strname + '\'s favorite subject in school is ' + strsubject + '.')
