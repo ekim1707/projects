@@ -34,6 +34,8 @@ print(ramit.get('email'))
 print(ramit['interests'][0])
 print(ramit['friends'][0]['email'])
 print(ramit['friends'][1]['interests'][1])
+if 'Ramit' in ramit['name']:
+    print('Yes')
 
 # Letter Summary
 
