@@ -31,7 +31,7 @@ The greatest challenge was simply successfully debugging nearly-functional code.
 ---
 *Note not all files directly follow given exercises intructions when run due to learning purposes.
 
-* dictexercises.py
+1. dictexercises.py
 
 Grade: N/A
 View Grade Information. Opens a dialogue
@@ -85,7 +85,7 @@ Write a word_histogram function that takes a paragraph of text as its input, and
 word_histogram('To be or not to be') 
 {'to': 2, 'be': 2, 'or': 1, 'not': 1}
 
- * guessnumber.py
+2. guessnumber.py
 
 Step 1
 You will implement a guess-the-number game where the player has to try guessing a secret number until he gets it right. For now, you will "hard code" the secret number to 5 (just set it to five like secret_number = 5). You will prompt the player to enter a number again and again, each time comparing his input to the secret number. To to that, you will need to write a while loop. If he guesses correctly, you will print "You win!", otherwise, you will prompt for a number again.
@@ -114,15 +114,15 @@ At the conclusion of a game, give the player the option of playing again. Exampl
 
 $ python guess_the_number.py I am thinking of a number between 1 and 10. You have 5 guesses left. What's the number? 1 Yes! You win! Do you want to play again (Y or N)? Y I am thinking of a number between 1 and 10. You have 5 guesses left. What's the number? 5 Yes! You win! Do you want to play again (Y or N)? N Bye!
 
- * phonebook.py
+3. phonebook.py
 
-Electronic Phone Book 
-===================== 
-1. Look up an entry 
-2. Set an entry 
-3. Delete an entry 
-4. List all entries 
-5. Quit
+Electronic Phone Book:
+
+Look up an entry 
+Set an entry 
+Delete an entry 
+List all entries 
+Quit
 What do you want to do (1-5)?
 
 If they choose to look up an entry, you will ask them for the person's name, and then look up the person's phone number by the given name and print it to the screen.
@@ -135,79 +135,92 @@ Example session:
 
 $ python phonebook.py 
 
-Electronic Phone Book 
-===================== 
-1. Look up an entry 
-2. Set an entry 
-3. Delete an entry 
-4. List all entries 
-5. Quit 
+Electronic Phone Book:
+
+Look up an entry 
+Set an entry 
+Delete an entry 
+List all entries 
+Quit
+
 What do you want to do (1-5)? 2 
 Name: Melissa 
 Phone Number: 584-394-5857 
 Entry stored for Melissa. 
 
-Electronic Phone Book 
-===================== 
-1. Look up an entry 
-2. Set an entry 
-3. Delete an entry 
-4. List all entries 
-5. Quit What do you want to do (1-5)? 2 
+Electronic Phone Book:
+
+Look up an entry 
+Set an entry 
+Delete an entry 
+List all entries 
+Quit
+
+What do you want to do (1-5)? 2 
 Name: Igor 
 Phone Number: 857-485-2935 
 Entry stored for Igor. 
 
-Electronic Phone Book 
-===================== 
-1. Look up an entry 
-2. Set an entry 
-3. Delete an entry 
-4. List all entries 
-5. Quit What do you want to do (1-5)? 2 
+Electronic Phone Book:
+
+Look up an entry 
+Set an entry 
+Delete an entry 
+List all entries 
+Quit
+
+What do you want to do (1-5)? 2 
 Name: Jazz 
 Phone Number: 334-584-2345 
 Entry stored for Jazz. 
 
-Electronic Phone Book 
-===================== 
-1. Look up an entry 
-2. Set an entry 
-3. Delete an entry 
-4. List all entries 
-5. Quit 
+Electronic Phone Book:
+
+Look up an entry 
+Set an entry 
+Delete an entry 
+List all entries 
+Quit 
+
 What do you want to do (1-5)? 1 
 Name: Melissa 
 Found entry for Melissa: 584-394-5857 
 
-Electronic Phone Book 
-===================== 
-1. Look up an entry 
-2. Set an entry 
-3. Delete an entry 
-4. List all entries 
-5. Quit What do you want to do (1-5)? 3 
+Electronic Phone Book:
+
+Look up an entry 
+Set an entry 
+Delete an entry 
+List all entries 
+Quit
+
+What do you want to do (1-5)? 3 
 Name: Melissa 
 Deleted entry for Melissa 
 
-Electronic Phone Book 
-===================== 
-1. Look up an entry 
-2. Set an entry 
-3. Delete an entry 
-4. List all entries 
-5. Quit What do you want to do (1-5)? 
+Electronic Phone Book:
+
+Look up an entry 
+Set an entry 
+Delete an entry 
+List all entries 
+Quit
+
+What do you want to do (1-5)? 
 4 Found entry for Igor: 857-485-2935 
 Found entry for Jazz: 334-584-2345 
 
-Electronic Phone Book ===================== 
-1. Look up an entry 
-2. Set an entry 
-3. Delete an entry 
-4. List all entries 
-5. Quit What do you want to do (1-5)? 5 Bye.
+Electronic Phone Book:
 
- * shapes.py
+Look up an entry 
+Set an entry 
+Delete an entry 
+List all entries 
+Quit 
+
+What do you want to do (1-5)? 5 Bye.
+
+4. shapes.py
 
 Draw these simple shapes (each in its own .py file):
 
@@ -221,7 +234,7 @@ a circle
 
 Extract all the code for the shapes in exercise 1 into functions. Move them all into a single file called shapes.py. Write a new .py program that imports the shapes module and use its functions to draw all the available shapes onto the screen.
 
- * shapeparameters.py
+5. shapeparameters.py
 
 *Cont. from above
 
@@ -232,16 +245,52 @@ fill - a bool specifying whether to fill or outline the shape
 color - the color of the shape. *Hint: you can use the color function to set both the pen color and the fill color.
 Make a new .py program that imports the shapes module and uses its functions to draw different shapes of various colors, fills, and sizes.
 
-  * Screenshots
-  * Github Link
-  * Code Examples
-
 ##Screenshots
 ---
 ![alt text](https://github.com/ekim1707/secondclasspython/blob/master/screenshots/turtlestar.png 'turtlestar.png')
 ![alt text](https://github.com/ekim1707/secondclasspython/blob/master/screenshots/turtlestar1.png 'turtlestar1.png')
 
+We completed the turtlestar.py file (which produced the first image) before we came across the solution code (turtlestar2.py, which produced the second image), and we noted the interesting differences that resulted from the different methods of completing the instructions of the exercise.
+
 ##Github Link
 ---
+[Github](https://github.com/ekim1707/secondclasspython)
+
 ##Code Examples
 ---
+Included is the code for both star-drawing programs.
+
+* turtlestar.py:
+
+'''from turtle import *
+
+rt(72)
+fd(100)
+lt(72)
+fd(100)
+rt(144)
+fd(100)
+lt(72)
+fd(100)
+rt(144)
+fd(100)
+lt(72)
+fd(100)
+rt(144)
+fd(100)
+lt(72)
+fd(100)
+rt(144)
+fd(100)
+lt(72)
+fd(100)
+
+mainloop()'''
+
+* turtlestar1.py:
+
+'''from turtle import *
+for i in range(5):
+    forward(100)
+    right(144)
+mainloop()'''
