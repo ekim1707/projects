@@ -31,7 +31,7 @@ The greatest challenge was simply successfully debugging nearly-functional code.
 ---
 *Note not all files directly follow given exercises intructions when run due to learning purposes.
 
-1. dictexercises.py
+1. [dictexercises.py](https://github.com/ekim1707/secondclasspython/blob/master/dictexercises.py)
 
 Grade: N/A
 View Grade Information. Opens a dialogue
@@ -85,7 +85,7 @@ Write a word_histogram function that takes a paragraph of text as its input, and
 word_histogram('To be or not to be') 
 {'to': 2, 'be': 2, 'or': 1, 'not': 1}
 
-2. guessnumber.py
+2. [guessnumber.py](https://github.com/ekim1707/secondclasspython/blob/master/guessnumber.py)
 
 Step 1
 You will implement a guess-the-number game where the player has to try guessing a secret number until he gets it right. For now, you will "hard code" the secret number to 5 (just set it to five like secret_number = 5). You will prompt the player to enter a number again and again, each time comparing his input to the secret number. To to that, you will need to write a while loop. If he guesses correctly, you will print "You win!", otherwise, you will prompt for a number again.
@@ -114,7 +114,7 @@ At the conclusion of a game, give the player the option of playing again. Exampl
 
 $ python guess_the_number.py I am thinking of a number between 1 and 10. You have 5 guesses left. What's the number? 1 Yes! You win! Do you want to play again (Y or N)? Y I am thinking of a number between 1 and 10. You have 5 guesses left. What's the number? 5 Yes! You win! Do you want to play again (Y or N)? N Bye!
 
-3. phonebook.py
+3. [phonebook.py](https://github.com/ekim1707/secondclasspython/blob/master/phonebook.py)
 
 Electronic Phone Book:
 
@@ -220,7 +220,7 @@ Quit
 
 What do you want to do (1-5)? 5 Bye.
 
-4. shapes.py
+4. [shapes.py](https://github.com/ekim1707/secondclasspython/blob/master/shapes.py)
 
 Draw these simple shapes (each in its own .py file):
 
@@ -234,7 +234,7 @@ a circle
 
 Extract all the code for the shapes in exercise 1 into functions. Move them all into a single file called shapes.py. Write a new .py program that imports the shapes module and use its functions to draw all the available shapes onto the screen.
 
-5. shapeparameters.py
+5. [shapeparameters.py](https://github.com/ekim1707/secondclasspython/blob/master/shapeparameters.py)
 
 *Cont. from above
 
