@@ -238,7 +238,8 @@ Make a new .py program that imports the shapes module and uses its functions to 
 
 ##Screenshots
 ---
-![alt text](https://github.com/PirieD704/final_project/blob/master/screenshots/register-screen.png 'register-screen.png')
+![alt text](https://github.com/ekim1707/secondclasspython/blob/master/screenshots/turtlestar.png 'turtlestar.png')
+![alt text](https://github.com/ekim1707/secondclasspython/blob/master/screenshots/turtlestar1.png 'turtlestar1.png')
 
 ##Github Link
 ---
