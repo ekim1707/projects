@@ -262,7 +262,7 @@ Included is the code for both star-drawing programs.
 
 * turtlestar.py:
 
-'''javascript
+'''python
 from turtle import *
 
 rt(72)
@@ -290,7 +290,7 @@ mainloop()'''
 
 * turtlestar1.py:
 
-'''javascript
+'''python
 from turtle import *
 for i in range(5):
     forward(100)
