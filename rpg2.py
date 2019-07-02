@@ -1,3 +1,5 @@
+print("")
+
 import random
 
 bountyhero = 0
@@ -6,7 +8,7 @@ bountysniper = 0
 
 breaker = 0
 while breaker < 1:
-    print("Bounty total: Hero = %d, Medic = %d, Sniper = %d." % (bountyhero, bountymedic, bountysniper))
+    print("Bounty total: Hero = %d, Medic = %d, Sniper = %d." % (bountyhero, bountymedic, bountysniper)), print("")
 
     class Character:
         def __init__(self, health, power, bounty, armor, evade):
@@ -185,9 +187,11 @@ while breaker < 1:
     sombra = Hacker(200, 15, 5, 0, 0)
 
     while 1 == 1:
+        print("THE GOOD GUYS:")
         print("Hero: 150 health, 20 dmg, 0 armor, 3 evade")
         print("Medic: 180 health, 5 dmg, 0 armor, 2 evade, possible +2 self-heal when attacking")
-        print("Sniper: 200 health, 120 dmg, 0 armor, 1 evade, has 1/5 chance of instakill headshot every turn")
+        print("Sniper: 200 health, 120 dmg, 0 armor, 1 evade, has 1/5 chance of instakill headshot every turn"), print("")
+        print("THE BAD GUYS")
         print("Goblin: 250 health, 40 dmg")
         print("Shadow: 1 health, 0 dmg, only takes dmg 1/10 times")
         print("Zombie: 0 health, 10 dmg, doesn't die regardless of health")
