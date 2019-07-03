@@ -1,31 +1,4 @@
-# Hero RPG Game: Part 2
-# You will base your game on version 7 of the game and make mods to the game.
-
-# Characters
-# make the hero generate double damage points during an attack with a probability of 20%
-# make a new character called Medic that can sometimes recuperate 2 health points after being attacked with a 
-# probability of 20%
-# make a character called Shadow who has only 1 starting health but will only take damage about once out of every
-# ten times he is attacked.
-# make a Zombie character that doesn't die even if his health is below zero
-# come up with at least two other characters with their individual characteristics, and implement them.
-# Give each enemy a bounty. For example, the prize for defeating the Goblin is 5 coins, for the Wizard it is 6 coins.
-# Items
-# make a SuperTonic item to the store, it will restore the hero back to 10 health points.
-# add an Armor item to the store. Buying an armor will add 2 armor points to the hero - you will add "armor" as a new
-# attribute to hero. Every time the hero is attacked, the amount of hit points dealt to him will be reduced by the value
-# of the armor attribute.
-# add an Evade item to the store. Buying an "evade" will add 2 evade points to the hero - another new attribute on the
-# Hero object. The more evade he has, the more probable that he will evade an enemy attack unscathed. For example: 2
-# evade points: 10% probably of avoiding attack, 4 evade points: 15% probability of avoiding attack. It should never be 
-# possible to reach 100% evasion though.
-# come up with at least two other items with their unique characteristics and implement them. You can add more attributes
-# to the hero or the characters.
-# Bonus
-# allow items to be used on the battle field. The hero can carry the items with him, and you have the option of choosing
-# to use a tonic at any turn in a battle.
-# make a Swap item, which when used on a battle field, will swap the power values of the two characters for one turn.
-# there is a bug in the store that allows the hero to buy items even if he has no coins. Fix this bug.
+# saving this personal project for later
 
 import random
 
@@ -50,25 +23,64 @@ class Healer:
 
 class Hero(Attack):
     def attack(self, enemy):
-        random1 = random.randint(1, heroa.accuracy)
-        if random1 == 1:
-            enemya.health -= self.power
-            print("You do %d damage." % self.power)
-            if enemya.health <= 0:
-                print(choice3 + " is dead.")
+        if choice2 == 'mercy':
+            horp = input('Do you want Mercy to Heal or Power Assist you? (H or P)?').lower()
+            countera = 0
+            while countera < 1: 
+                if horp == 'h':
+                    random1 = random.randint(1, (heroa.accuracy + enemya.dodge))
+                    if random1 == 1:
+                        enemya.health -= self.power
+                        if enemya.health <= 0:
+                            print(choice3 + " is dead.")
+                            countera += 1
+                            break
+                        else:
+                            if choice3 == 'reaper':
+                                enemya.health += thealer.heal
+                                enemya.health = min(250, enemya.health)
+                            else:
+                                enemya.health += thealer.heal
+                                enemya.health = min(200, enemya.health)
+                            hera.health += hhealer.heal
+                            print("You do %d damage." % self.power)
+                            print(choice3.capitalize() + " was healed by %d." % thealer.heal)
+                            print("You were healed by %d." % hhealer.heal)
+                            countera += 1
+                    else:
+                        print("You missed.")
+                        countera += 1
+                elif horp == 'p':
+                    random2 = random.randint(1, int(heroa.accuracy + enemya.dodge))
+                    if random2 == 1:
+                        enemya.health -= self.power + hhealer.assist
+                        if enemya.health <= 0:
+                            print(choice3 + " is dead.")
+                            countera += 1
+                            break
+                        else:
+                            enemya.health += thealer.heal
+                            print("You do %d damage." % self.power)
+                            print(choice3.capitalize() + " was healed by %d." % thealer.heal)
+                            print("You were not healed.")
+                            countera += 1
         else:
-            print("You missed.")
+            random3 = random.randint(1, int(heroa.accuracy + enemya.dodge))
+            if random3 == 1:
+                enemya.health -= self.power + hhealer.assist
+                if enemya.health <= 0:
+                    print(choice3.capitalize() + " is dead.")
+                else:
+                    enemya.health += thealer.heal
+                    heroa.health += hhealer.heal
+                    print("You do %d damage." % self.power)
+                    print(choice3.capitalize() + " was healed by %d." % thealer.heal)
+                    print("You were healed by %d" % hhealer.heal)
+            else:
+                print("You missed.")
     def print_status(self):
-        print("You have %d health and %d power." % (self.health, self.power))
-    # def double_dmg(self, enemy):
-    #     double_power = self.power * 2
-    #     print(double_power)
-    #     reaper.health -= double_power
-    #     print("You do %d damage to " + choice2.capitalize() + "." % double_power)
-
-class HHealer(Healer):
-    hero.health += self.heal
-
+        print("You have %d health, %d power, %d acc, %d dodge, %d escape, and %d shots remaining until reload." % (self.health, self.power, self.accuracy, self.dodge, self.escape, self.reload))
+        print(choice3.capitalize() + " has %d health, %d power, %d acc, %d dodge, %d escape, and %d shots remaining until reload." % (enemya.health, enemya.power, enemya.accuracy, enemya.dodge, enemya.escape, enemya.reload))
 
 class Talon(Attack):
     def attack(self, enemy):
@@ -81,27 +93,18 @@ class Talon(Attack):
                     print("You are dead."), print("")
         else:
             print(choice3.capitalize() + " missed.")
-    def print_status(self):
-        print("You have %d health and %d power." % (self.health, self.power))
-
-class THealer(Healer):
-
-# make a character called Shadow who has only 1 starting health but will only take damage about once out of every
-# ten times he is attacked.
-# make a Zombie character that doesn't die even if his health is below zero
-# come up with at least two other characters with their individual characteristics, and implement them.
 
 # self, health, power, accuracy, dodge, escape, reload
-tracer = Hero(150, 30, 2, 'high', 'high', 0)
-soldier = Hero(200, 40, 2, 'avg', 'high', 3)
-pharah = Hero(200, 55, 2, 'low', 'avg', 6)
-# mercy = HHealer(50, 30)
-# zen = HHealer(30, 25)
-reaper = Talon(250, 90, 1, 'low', 'high', 8)
-junkrat = Talon(200, 50, 3, 'low', 'avg', 6)
-widow = Talon(200, 120, 3, 'high', 'low', 12)
-# baptiste = THealer(30, 20)
-# ana = THealer(75, 70)
+tracer = Hero(150, 30, 2, 2, 3, 0)
+soldier = Hero(200, 40, 2, 1, 3, 3)
+pharah = Hero(200, 55, 2, 0, 2, 6)
+mercy = Healer(50, 30)
+zen = Healer(30, 25)
+reaper = Talon(250, 90, 1, 0, 3, 8)
+junkrat = Talon(200, 50, 3, 0, 2, 6)
+widow = Talon(200, 120, 3, 2, 1, 12)
+baptiste = Healer(30, 20)
+ana = Healer(75, 70)
 
 while 1 == 1:
     print("WELCOME TO OVERWATCH RPG"), print("")
@@ -121,8 +124,7 @@ while 1 == 1:
     print("WIDOWMAKER: 200, 120 bs 200 hs, 1/3 bs 1/4 hs, high, low, 12, Grapple: rest one turn and restore health 10 cd, Infra-Sight: increase acc 1/2 bs 1/4 hs for 15 turns"), print("")
     print("SUPPORT (*Note: Enemy healers will always attack until healing is required):"), print("")
     print("BAPTISTE: +30 1/2 acc, +20 dmg 1/2 acc, Immortality Field: prevents enemy health from dropping below 20% for 4 turns, Amp Matrix: dmg assist increased to 40% for 4 turns")
-    print("ANA: +75 1/2 acc, +70 dmg 1/2 acc, Sleep Dart: guarantees enemy 1/1 acc for one turn, Nano Boost: restores enemy health full, 50% dmg assist, and hero dmg reduced 50% for 8 turns"), print("")
-    print("")
+    print("ANA: +75 1/2 acc, +70 dmg 1/2 acc, Sleep Dart: guarantees enemy 1/1 acc for one turn, Nano Boost: restores enemy health full, 50% dmg assist, and hero dmg reduced 50% for 8 turns")
     while 1 == 1:
         cont = input("Press ENTER to continue")
         break
@@ -182,17 +184,18 @@ while heroa.alive() and enemya.alive():
     print("1. primary fire")
     print("2. secondary ability")
     print("3. ultimate ability")
-    print("4. run")
+    print("4. check status")
+    print("5. run")
     user_input = input()
     if user_input == "1":
         heroa.attack(enemya)
-        enemya.attack(heroa)
     elif user_input == "2":
         enemya.attack(heroa)
     elif user_input == "3":
-        print(heroa.print_status)
-        print(enemya.print_status)
+        pass
     elif user_input == "4":
+        heroa.print_status()
+    elif user_input == "5":
         print("Goodbye.")
         break
     else:
