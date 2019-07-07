@@ -36,7 +36,7 @@ class Hero(Attack):
                     random1 = random.randint(1, (heroa.accuracy + enemya.dodge))
                     if random1 == 1:
                         enemya.health -= self.power
-                        self.ultimate = int(self.power * 0.10)
+                        self.ultimate = int(self.power * 0.20)
                         if enemya.health <= 0:
                             print(choice3.capitalize() + " is dead.")
                             countera += 1
@@ -54,7 +54,7 @@ class Hero(Attack):
                                     randomthh = random.randint(1, (enemya.dodge + 2))
                                     if randomthh == 1:
                                         enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
+                                        thealer.ultimate = int(thealer.heal * 0.20)
                                         enemya.health = min(250, enemya.health)
                                         print(choice4.capitalize() + "'s healing attempt connected.")
                                         print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -73,7 +73,7 @@ class Hero(Attack):
                                     randomthh1 = random.randint(1, (enemya.dodge + 2))
                                     if randomthh1 == 1:
                                         enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
+                                        thealer.ultimate = int(thealer.heal * 0.20)
                                         enemya.health = min(200, enemya.health)
                                         print(choice4.capitalize() + "'s healing attempt connected.")
                                         print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -95,7 +95,7 @@ class Hero(Attack):
                                 randomm5 = random.randint(1, (enemya.dodge + 2))
                                 if randomm5 == 1:
                                     enemya.health += thealer.heal
-                                    thealer.ultimate = int(thealer.heal * 0.10)
+                                    thealer.ultimate = int(thealer.heal * 0.20)
                                     enemya.health = min(250, enemya.health)
                                     print(choice4.capitalize() + "'s healing attempt connected.")
                                     print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -114,7 +114,7 @@ class Hero(Attack):
                                 randomthh1 = random.randint(1, (enemya.dodge + 2))
                                 if randomthh1 == 1:
                                     enemya.health += thealer.heal
-                                    thealer.ultimate = int(thealer.heal * 0.10)
+                                    thealer.ultimate = int(thealer.heal * 0.20)
                                     enemya.health = min(200, enemya.health)
                                     print(choice4.capitalize() + "'s healing attempt connected.")
                                     print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -132,7 +132,7 @@ class Hero(Attack):
                     random2 = random.randint(1, (heroa.accuracy + enemya.dodge))
                     if random2 == 1:
                         newpower = (self.power + (self.power * hhealer.assist))
-                        self.ultimate = int(newpower * 0.13)
+                        self.ultimate = int(newpower * 0.26)
                         enemya.health -= newpower
                         if enemya.health <= 0:
                             print(choice3.capitalize() + " is dead.")
@@ -151,7 +151,7 @@ class Hero(Attack):
                                     randomthh2 = random.randint(1, (enemya.dodge + 2))
                                     if randomthh2 == 1:
                                         enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
+                                        thealer.ultimate = int(thealer.heal * 0.20)
                                         enemya.health = min(250, enemya.health)
                                         print(choice4.capitalize() + "'s healing attempt connected.")
                                         print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -170,7 +170,7 @@ class Hero(Attack):
                                     randomthh3 = random.randint(1, (enemya.dodge + 2))
                                     if randomthh3 == 1:
                                         enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
+                                        thealer.ultimate = int(thealer.heal * 0.20)
                                         enemya.health = min(200, enemya.health)
                                         print(choice4.capitalize() + "'s healing attempt connected.")
                                         print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -192,7 +192,7 @@ class Hero(Attack):
                                 randomm6 = random.randint(1, (enemya.dodge + 2))
                                 if randomm6 == 1:
                                     enemya.health += thealer.heal
-                                    thealer.ultimate = int(thealer.heal * 0.10)
+                                    thealer.ultimate = int(thealer.heal * 0.20)
                                     enemya.health = min(250, enemya.health)
                                     print(choice4.capitalize() + "'s healing attempt connected.")
                                     print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -211,7 +211,7 @@ class Hero(Attack):
                                 randomthh1 = random.randint(1, (enemya.dodge + 2))
                                 if randomthh1 == 1:
                                     enemya.health += thealer.heal
-                                    thealer.ultimate = int(thealer.heal * 0.10)
+                                    thealer.ultimate = int(thealer.heal * 0.20)
                                     enemya.health = min(200, enemya.health)
                                     print(choice4.capitalize() + "'s healing attempt connected.")
                                     print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -230,7 +230,7 @@ class Hero(Attack):
             random3 = random.randint(1, (heroa.accuracy + enemya.dodge))
             if random3 == 1:
                 newpower1 = (self.power + (self.power * hhealer.assist))
-                self.ultimate = int((newpower1 * 0.125))
+                self.ultimate = int((newpower1 * 0.25))
                 enemya.health -= newpower1
                 # hhealer.ultimate = int((self.power * hhealer.heal)/2)
                 if enemya.health <= 0:
@@ -248,7 +248,7 @@ class Hero(Attack):
                             randomthh5 = random.randint(1, (enemya.dodge + 2))
                             if randomthh5 == 1:
                                 enemya.health += thealer.heal
-                                thealer.ultimate = int(thealer.heal * 0.10)
+                                thealer.ultimate = int(thealer.heal * 0.20)
                                 enemya.health = min(250, enemya.health)
                                 print(choice4.capitalize() + "'s healing attempt connected.")
                                 print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -267,7 +267,7 @@ class Hero(Attack):
                             randomthh6 = random.randint(1, (enemya.dodge + 2))
                             if randomthh6 == 1:
                                 enemya.health += thealer.heal
-                                thealer.ultimate = int(thealer.heal * 0.10)
+                                thealer.ultimate = int(thealer.heal * 0.20)
                                 enemya.health = min(200, enemya.health)
                                 print(choice4.capitalize() + "'s healing attempt connected.")
                                 print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -288,7 +288,7 @@ class Hero(Attack):
                         randomm1 = random.randint(1, (enemya.dodge + 2))
                         if randomm1 == 1:
                             enemya.health += thealer.heal
-                            thealer.ultimate = int(thealer.heal * 0.10)
+                            thealer.ultimate = int(thealer.heal * 0.20)
                             enemya.health = min(250, enemya.health)
                             print(choice4.capitalize() + "'s healing attempt connected.")
                             print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -307,7 +307,7 @@ class Hero(Attack):
                         randomm2 = random.randint(1, (enemya.dodge + 2))
                         if randomm2 == 1:
                             enemya.health += thealer.heal
-                            thealer.ultimate = int(thealer.heal * 0.10)
+                            thealer.ultimate = int(thealer.heal * 0.20)
                             enemya.health = min(200, enemya.health)
                             print(choice4.capitalize() + "'s healing attempt connected.")
                             print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -335,7 +335,7 @@ class Hero(Attack):
                         hhealer.mercyvar = 1
                         randoms1 = random.randint(1, (2 + enemya.dodge))
                         if randoms1 == 1:
-                            self.ultimate = int(120 * 0.10)
+                            self.ultimate = int(120 * 0.20)
                             enemya.health -= 120
                             if enemya.health <= 0:
                                 print(choice3 + " is dead.")
@@ -348,7 +348,7 @@ class Hero(Attack):
                                         randomthh7 = random.randint(1, (enemya.dodge + 2))
                                         if randomthh7 == 1:
                                             enemya.health += thealer.heal
-                                            thealer.ultimate = int(thealer.heal * 0.10)
+                                            thealer.ultimate = int(thealer.heal * 0.20)
                                             enemya.health = min(250, enemya.health)
                                             print(choice4.capitalize() + "'s healing attempt connected.")
                                             print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -367,7 +367,7 @@ class Hero(Attack):
                                         randomthh8 = random.randint(1, (enemya.dodge + 2))
                                         if randomthh8 == 1:
                                             enemya.health += thealer.heal
-                                            thealer.ultimate = int(thealer.heal * 0.10)
+                                            thealer.ultimate = int(thealer.heal * 0.20)
                                             enemya.health = min(200, enemya.health)
                                             print(choice4.capitalize() + "'s healing attempt connected.")
                                             print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -389,7 +389,7 @@ class Hero(Attack):
                                     randomm7 = random.randint(1, (enemya.dodge + 2))
                                     if randomm7 == 1:
                                         enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
+                                        thealer.ultimate = int(thealer.heal * 0.20)
                                         enemya.health = min(250, enemya.health)
                                         print(choice4.capitalize() + "'s healing attempt connected.")
                                         print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -408,7 +408,7 @@ class Hero(Attack):
                                     randomthh1 = random.randint(1, (enemya.dodge + 2))
                                     if randomthh1 == 1:
                                         enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
+                                        thealer.ultimate = int(thealer.heal * 0.20)
                                         enemya.health = min(200, enemya.health)
                                         print(choice4.capitalize() + "'s healing attempt connected.")
                                         print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -425,7 +425,7 @@ class Hero(Attack):
                         hhealer.mercyvar = 1
                         randoms2 = random.randint(1, (2 + enemya.dodge))
                         if randoms2 == 1:
-                            self.ultimate = int(160 * 0.10)
+                            self.ultimate = int(160 * 0.20)
                             enemya.health -= 160
                             if enemya.health <= 0:
                                 print(choice3 + " is dead.")
@@ -438,7 +438,7 @@ class Hero(Attack):
                                         randomthh9 = random.randint(1, (enemya.dodge + 2))
                                         if randomthh9 == 1:
                                             enemya.health += thealer.heal
-                                            thealer.ultimate = int(thealer.heal * 0.10)
+                                            thealer.ultimate = int(thealer.heal * 0.20)
                                             enemya.health = min(250, enemya.health)
                                             print(choice4.capitalize() + "'s healing attempt connected.")
                                             print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -457,7 +457,7 @@ class Hero(Attack):
                                         randomthh10 = random.randint(1, (enemya.dodge + 2))
                                         if randomthh10 == 1:
                                             enemya.health += thealer.heal
-                                            thealer.ultimate = int(thealer.heal * 0.10)
+                                            thealer.ultimate = int(thealer.heal * 0.20)
                                             enemya.health = min(200, enemya.health)
                                             print(choice4.capitalize() + "'s healing attempt connected.")
                                             print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -477,7 +477,7 @@ class Hero(Attack):
                                     randomm8 = random.randint(1, (enemya.dodge + 2))
                                     if randomm8 == 1:
                                         enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
+                                        thealer.ultimate = int(thealer.heal * 0.20)
                                         enemya.health = min(250, enemya.health)
                                         print(choice4.capitalize() + "'s healing attempt connected.")
                                         print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -496,7 +496,7 @@ class Hero(Attack):
                                     randomthh1 = random.randint(1, (enemya.dodge + 2))
                                     if randomthh1 == 1:
                                         enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
+                                        thealer.ultimate = int(thealer.heal * 0.20)
                                         enemya.health = min(200, enemya.health)
                                         print(choice4.capitalize() + "'s healing attempt connected.")
                                         print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -512,7 +512,7 @@ class Hero(Attack):
             else:
                 randoms3 = random.randint(1, (2 + enemya.dodge))
                 if randoms3 == 1:
-                    self.ultimate = int(150 * 0.125)
+                    self.ultimate = int(150 * 0.25)
                     enemya.health -= 150
                     if enemya.health <= 0:
                         print(choice3 + " is dead.")
@@ -525,7 +525,7 @@ class Hero(Attack):
                                 randomthh11 = random.randint(1, (enemya.dodge + 2))
                                 if randomthh11 == 1:
                                     enemya.health += thealer.heal
-                                    thealer.ultimate = int(thealer.heal * 0.10)
+                                    thealer.ultimate = int(thealer.heal * 0.20)
                                     enemya.health = min(250, enemya.health)
                                     print(choice4.capitalize() + "'s healing attempt connected.")
                                     print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -544,7 +544,7 @@ class Hero(Attack):
                                 randomthh10 = random.randint(1, (enemya.dodge + 2))
                                 if randomthh10 == 1:
                                     enemya.health += thealer.heal
-                                    thealer.ultimate = int(thealer.heal * 0.10)
+                                    thealer.ultimate = int(thealer.heal * 0.20)
                                     enemya.health = min(200, enemya.health)
                                     print(choice4.capitalize() + "'s healing attempt connected.")
                                     print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -565,7 +565,7 @@ class Hero(Attack):
                             randomm3 = random.randint(1, (enemya.dodge + 2))
                             if randomm3 == 1:
                                 enemya.health += thealer.heal
-                                thealer.ultimate = int(thealer.heal * 0.10)
+                                thealer.ultimate = int(thealer.heal * 0.20)
                                 enemya.health = min(250, enemya.health)
                                 print(choice4.capitalize() + "'s healing attempt connected.")
                                 print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -584,7 +584,7 @@ class Hero(Attack):
                             randomm4 = random.randint(1, (enemya.dodge + 2))
                             if randomm4 == 1:
                                 enemya.health += thealer.heal
-                                thealer.ultimate = int(thealer.heal * 0.10)
+                                thealer.ultimate = int(thealer.heal * 0.20)
                                 enemya.health = min(200, enemya.health)
                                 print(choice4.capitalize() + "'s healing attempt connected.")
                                 print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
@@ -614,7 +614,7 @@ class Hero(Attack):
                     print("You stuck the pulse bomb, and " + choice3.capitalize() + " is dead.")
                 else:
                     enemya.health += thealer.heal
-                    thealer.ultimate = int(thealer.heal * 0.10)
+                    thealer.ultimate = int(thealer.heal * 0.20)
                     print("You stuck the pulse bomb and did 300 damage.")
                     print("You were healed by %d" % hhealer.heal)
                     print("Your ult charge is reset to 0 percent.")
@@ -623,184 +623,335 @@ class Hero(Attack):
             else:
                 print("You missed.")
         if choice1 == 'soldier':
-            print("Soldier76's visor is on, and he will not miss primary fire for the next %d turns." % self.ultcount)
-            if choice2 == 'mercy':
-                countera = 0
-                while countera < 1: 
-                    horp = input('Do you want Mercy to Heal or Power Assist you? (H or P)? ').lower()
-                    if horp == 'h':
-                        hhealer.mercyvar = 1
-                        enemya.health -= self.power
-                        if enemya.health <= 0:
-                            print(choice3.capitalize() + " is dead.")
-                            countera += 1
-                            break
-                        else:
-                            print("You do %d damage." % self.power)
-                            print("You will be healed by %d next turn." % (hhealer.heal))
-                            print("Your ultimate charge is reset to 0.")
-                            print(choice2.capitalize() + " gained 2 passive ult charge.")
-                            if choice3 == 'reaper':
-                                if enemya.health >= 250:
-                                    thealer.mercyvar = 1
-                                else:
-                                    thealer.mercyvar = 0
-                                    randomthh = random.randint(1, (enemya.dodge + 2))
-                                    if randomthh == 1:
-                                        enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
-                                        enemya.health = min(250, enemya.health)
-                                        print(choice4.capitalize() + "'s healing attempt connected.")
-                                        print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
-                                        print(choice3.capitalize() + " gained 2 passive ult charge.")
-                                    else:
-                                        thealer.ultimate = 0
-                                        print(choice4.capitalize() + "'s healing attempt missed.")
-                                        print(choice3.capitalize() + "'s health is %d." % enemya.health)
-                                        print(choice3.capitalize() + " gained 2 passive ult charge.")
-                                        print(choice4.capitalize() + " gained 2 passive ult charge.")
+            if soldier.ultcount > 0:
+                input("Soldier76's visor is on, and he will not miss primary fire for the next %d turn(s). Press ENTER." % self.ultcount)
+                if choice2 == 'mercy':
+                    countera = 0
+                    while countera < 1: 
+                        horp = input('Do you want Mercy to Heal or Power Assist you? (H or P)? ').lower()
+                        if horp == 'h':
+                            hhealer.mercyvar = 1
+                            enemya.health -= self.power
+                            if enemya.health <= 0:
+                                print(choice3.capitalize() + " is dead.")
+                                countera += 1
+                                break
                             else:
-                                if enemya.health >= 200:
-                                    thealer.mercyvar = 1
-                                else:
-                                    thealer.mercyvar = 0
-                                    randomthh1 = random.randint(1, (enemya.dodge + 2))
-                                    if randomthh1 == 1:
-                                        enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
-                                        enemya.health = min(200, enemya.health)
-                                        print(choice4.capitalize() + "'s healing attempt connected.")
-                                        print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
-                                        print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                print("You do %d damage." % self.power)
+                                print("You will be healed by %d next turn." % (hhealer.heal))
+                                print("Your ultimate charge is reset to 0.")
+                                print(choice2.capitalize() + " gained 2 passive ult charge.")
+                                if choice3 == 'reaper':
+                                    if enemya.health >= 250:
+                                        thealer.mercyvar = 1
                                     else:
-                                        thealer.ultimate = 0
-                                        print(choice4.capitalize() + "'s healing attempt missed.")
-                                        print(choice3.capitalize() + "'s health is %d." % enemya.health)
-                                        print(choice3.capitalize() + " gained 2 passive ult charge.")
-                                        print(choice4.capitalize() + " gained 2 passive ult charge.")
-                            countera += 1
-                    elif horp == 'p':
-                        hhealer.mercyvar = 0
-                        newpower = (self.power + (self.power * hhealer.assist))
-                        enemya.health -= newpower
-                        if enemya.health <= 0:
-                            print(choice3.capitalize() + " is dead.")
-                            countera += 1
-                            break
-                        else:
-                            print("You do %d damage." % newpower)
-                            print("You will not be healed next turn.")
-                            print("You gained an extra %d ult charge and 2 passive charge." % self.ultimate)
-                            print(choice2.capitalize() + " gained 2 passive ult charge.")
-                            if choice3 == 'reaper':
-                                if enemya.health >= 250:
-                                    thealer.mercyvar = 1
+                                        thealer.mercyvar = 0
+                                        randomthh = random.randint(1, (enemya.dodge + 2))
+                                        if randomthh == 1:
+                                            enemya.health += thealer.heal
+                                            thealer.ultimate = int(thealer.heal * 0.20)
+                                            enemya.health = min(250, enemya.health)
+                                            print(choice4.capitalize() + "'s healing attempt connected.")
+                                            print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                        else:
+                                            thealer.ultimate = 0
+                                            print(choice4.capitalize() + "'s healing attempt missed.")
+                                            print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                            print(choice4.capitalize() + " gained 2 passive ult charge.")
                                 else:
-                                    thealer.mercyvar = 0
-                                    randomthh2 = random.randint(1, (enemya.dodge + 2))
-                                    if randomthh2 == 1:
-                                        enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
-                                        enemya.health = min(250, enemya.health)
-                                        print(choice4.capitalize() + "'s healing attempt connected.")
-                                        print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
-                                        print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                    if enemya.health >= 200:
+                                        thealer.mercyvar = 1
                                     else:
-                                        thealer.ultimate = 0
-                                        print(choice4.capitalize() + "'s healing attempt missed.")
-                                        print(choice3.capitalize() + "'s health is %d." % enemya.health)
-                                        print(choice3.capitalize() + " gained 2 passive ult charge.")
-                                        print(choice4.capitalize() + " gained 2 passive ult charge.")
+                                        thealer.mercyvar = 0
+                                        randomthh1 = random.randint(1, (enemya.dodge + 2))
+                                        if randomthh1 == 1:
+                                            enemya.health += thealer.heal
+                                            thealer.ultimate = int(thealer.heal * 0.20)
+                                            enemya.health = min(200, enemya.health)
+                                            print(choice4.capitalize() + "'s healing attempt connected.")
+                                            print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                        else:
+                                            thealer.ultimate = 0
+                                            print(choice4.capitalize() + "'s healing attempt missed.")
+                                            print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                            print(choice4.capitalize() + " gained 2 passive ult charge.")
+                                countera += 1
+                        elif horp == 'p':
+                            hhealer.mercyvar = 0
+                            newpower = (self.power + (self.power * hhealer.assist))
+                            enemya.health -= newpower
+                            if enemya.health <= 0:
+                                print(choice3.capitalize() + " is dead.")
+                                countera += 1
+                                break
                             else:
-                                if enemya.health >= 200:
-                                    thealer.mercyvar = 1
-                                else:
-                                    thealer.mercyvar = 0
-                                    randomthh3 = random.randint(1, (enemya.dodge + 2))
-                                    if randomthh3 == 1:
-                                        enemya.health += thealer.heal
-                                        thealer.ultimate = int(thealer.heal * 0.10)
-                                        enemya.health = min(200, enemya.health)
-                                        print(choice4.capitalize() + "'s healing attempt connected.")
-                                        print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
-                                        print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                print("You do %d damage." % newpower)
+                                print("You will not be healed next turn.")
+                                print("Your ultimate charge is reset to 0.")
+                                print(choice2.capitalize() + " gained 2 passive ult charge.")
+                                if choice3 == 'reaper':
+                                    if enemya.health >= 250:
+                                        thealer.mercyvar = 1
                                     else:
-                                        thealer.ultimate = 0
-                                        print(choice4.capitalize() + "'s healing attempt missed.")
-                                        print(choice3.capitalize() + "'s health is %d." % enemya.health)
-                                        print(choice3.capitalize() + " gained 2 passive ult charge.")
-                                        print(choice4.capitalize() + " gained 2 passive ult charge.")
-                            countera += 1
-                    else:
-                        print("Invalid answer.")
-            else:
-                newpower1 = (self.power + (self.power * hhealer.assist))
-                self.ultimate = int((newpower1 * 0.125))
-                enemya.health -= newpower1
-                # hhealer.ultimate = int((self.power * hhealer.heal)/2)
-                if enemya.health <= 0:
-                    print(choice3.capitalize() + " is dead.")
+                                        thealer.mercyvar = 0
+                                        randomthh2 = random.randint(1, (enemya.dodge + 2))
+                                        if randomthh2 == 1:
+                                            enemya.health += thealer.heal
+                                            thealer.ultimate = int(thealer.heal * 0.20)
+                                            enemya.health = min(250, enemya.health)
+                                            print(choice4.capitalize() + "'s healing attempt connected.")
+                                            print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                        else:
+                                            thealer.ultimate = 0
+                                            print(choice4.capitalize() + "'s healing attempt missed.")
+                                            print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                            print(choice4.capitalize() + " gained 2 passive ult charge.")
+                                else:
+                                    if enemya.health >= 200:
+                                        thealer.mercyvar = 1
+                                    else:
+                                        thealer.mercyvar = 0
+                                        randomthh3 = random.randint(1, (enemya.dodge + 2))
+                                        if randomthh3 == 1:
+                                            enemya.health += thealer.heal
+                                            thealer.ultimate = int(thealer.heal * 0.20)
+                                            enemya.health = min(200, enemya.health)
+                                            print(choice4.capitalize() + "'s healing attempt connected.")
+                                            print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                        else:
+                                            thealer.ultimate = 0
+                                            print(choice4.capitalize() + "'s healing attempt missed.")
+                                            print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                            print(choice4.capitalize() + " gained 2 passive ult charge.")
+                                countera += 1
+                        else:
+                            print("Invalid answer.")
                 else:
-                    print("You do %d damage." % newpower1)
-                    print("You will be healed by %d next turn." % (hhealer.heal))
-                    print("You gained an extra %d ult charge and 2 passive charge." % self.ultimate)
-                    print(choice2.capitalize() + " gained 2 passive ult charge.")
-                    if choice3 == 'reaper':
-                        if enemya.health >= 250:
-                            thealer.mercyvar = 1
-                        else:
-                            thealer.mercyvar = 0
-                            randomthh5 = random.randint(1, (enemya.dodge + 2))
-                            if randomthh5 == 1:
-                                enemya.health += thealer.heal
-                                thealer.ultimate = int(thealer.heal * 0.10)
-                                enemya.health = min(250, enemya.health)
-                                print(choice4.capitalize() + "'s healing attempt connected.")
-                                print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
-                                print(choice3.capitalize() + " gained 2 passive ult charge.")
-                            else:
-                                thealer.ultimate = 0
-                                print(choice4.capitalize() + "'s healing attempt missed.")
-                                print(choice3.capitalize() + "'s health is %d." % enemya.health)
-                                print(choice3.capitalize() + " gained 2 passive ult charge.")
-                                print(choice4.capitalize() + " gained 2 passive ult charge.")
+                    newpower1 = (self.power + (self.power * hhealer.assist))
+                    enemya.health -= newpower1
+                    # hhealer.ultimate = int((self.power * hhealer.heal)/2)
+                    if enemya.health <= 0:
+                        print(choice3.capitalize() + " is dead.")
                     else:
-                        if enemya.health >= 200:
-                            thealer.mercyvar = 1
-                        else:
-                            thealer.mercyvar = 0
-                            randomthh6 = random.randint(1, (enemya.dodge + 2))
-                            if randomthh6 == 1:
-                                enemya.health += thealer.heal
-                                thealer.ultimate = int(thealer.heal * 0.10)
-                                enemya.health = min(200, enemya.health)
-                                print(choice4.capitalize() + "'s healing attempt connected.")
-                                print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
-                                print(choice3.capitalize() + " gained 2 passive ult charge.")
+                        print("You do %d damage." % newpower1)
+                        print("You will be healed by %d next turn." % (hhealer.heal))
+                        print("Your ultimate charge is reset to 0.")
+                        print(choice2.capitalize() + " gained 2 passive ult charge.")
+                        if choice3 == 'reaper':
+                            if enemya.health >= 250:
+                                thealer.mercyvar = 1
                             else:
-                                thealer.ultimate = 0
-                                print(choice4.capitalize() + "'s healing attempt missed.")
-                                print(choice3.capitalize() + "'s health is %d." % enemya.health)
-                                print(choice3.capitalize() + " gained 2 passive ult charge.")
-                                print(choice4.capitalize() + " gained 2 passive ult charge.")
-            soldier.ultcount -= 1
+                                thealer.mercyvar = 0
+                                randomthh5 = random.randint(1, (enemya.dodge + 2))
+                                if randomthh5 == 1:
+                                    enemya.health += thealer.heal
+                                    thealer.ultimate = int(thealer.heal * 0.20)
+                                    enemya.health = min(250, enemya.health)
+                                    print(choice4.capitalize() + "'s healing attempt connected.")
+                                    print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                else:
+                                    thealer.ultimate = 0
+                                    print(choice4.capitalize() + "'s healing attempt missed.")
+                                    print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                    print(choice4.capitalize() + " gained 2 passive ult charge.")
+                        else:
+                            if enemya.health >= 200:
+                                thealer.mercyvar = 1
+                            else:
+                                thealer.mercyvar = 0
+                                randomthh6 = random.randint(1, (enemya.dodge + 2))
+                                if randomthh6 == 1:
+                                    enemya.health += thealer.heal
+                                    thealer.ultimate = int(thealer.heal * 0.20)
+                                    enemya.health = min(200, enemya.health)
+                                    print(choice4.capitalize() + "'s healing attempt connected.")
+                                    print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                else:
+                                    thealer.ultimate = 0
+                                    print(choice4.capitalize() + "'s healing attempt missed.")
+                                    print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                    print(choice4.capitalize() + " gained 2 passive ult charge.")
+                soldier.ultcount -= 1
+            else:
+                print("Soldier's visor is now off.")
         if choice1 == 'pharah':
-            self.ultcount = 1
-            newrandom1 = random.randint(1, (1 + enemya.dodge))
-            if newrandom1 == 1:
-                enemya.health -= 150
-                if enemya.health <= 0:
-                    print("Your rocket barrage killed " + choice3.capitalize() + ".")
+            if pharah.ultcount > 0:
+                input("Pharah will rocket barrage for the next %d turns. Press ENTER to continue" % pharah.ultcount)
+                if choice2 == 'mercy':
+                    counterp = 0
+                    while counterp < 1: 
+                        rbhp = input('Do you want Mercy to Heal or Power Assist you? (H or P)? ').lower()
+                        if rbhp == 'h':
+                            randomrb1 = random.randint(1, (1 + enemy.dodge))
+                            if randomrb1 == 1:
+                                hhealer.mercyvar = 1
+                                enemya.health -= 150
+                                if enemya.health <= 0:
+                                    print(choice3.capitalize() + " is dead.")
+                                    counterp += 1
+                                    break
+                                else:
+                                    print("You do 150 damage.")
+                                    print("You will be healed by %d next turn." % (hhealer.heal))
+                                    print("Your ultimate charge is reset to 0.")
+                                    print(choice2.capitalize() + " gained 2 passive ult charge.")
+                                    if choice3 == 'reaper':
+                                        if enemya.health >= 250:
+                                            thealer.mercyvar = 1
+                                        else:
+                                            thealer.mercyvar = 0
+                                            randomrb2 = random.randint(1, (enemya.dodge + 2))
+                                            if randomrb2 == 1:
+                                                enemya.health += thealer.heal
+                                                thealer.ultimate = int(thealer.heal * 0.20)
+                                                enemya.health = min(250, enemya.health)
+                                                print(choice4.capitalize() + "'s healing attempt connected.")
+                                                print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                                print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                            else:
+                                                thealer.ultimate = 0
+                                                print(choice4.capitalize() + "'s healing attempt missed.")
+                                                print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                                print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                                print(choice4.capitalize() + " gained 2 passive ult charge.")
+                                    else:
+                                        if enemya.health >= 200:
+                                            thealer.mercyvar = 1
+                                        else:
+                                            thealer.mercyvar = 0
+                                            randomrb3 = random.randint(1, (enemya.dodge + 2))
+                                            if randomrb3 == 1:
+                                                enemya.health += thealer.heal
+                                                thealer.ultimate = int(thealer.heal * 0.20)
+                                                enemya.health = min(200, enemya.health)
+                                                print(choice4.capitalize() + "'s healing attempt connected.")
+                                                print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                                print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                            else:
+                                                thealer.ultimate = 0
+                                                print(choice4.capitalize() + "'s healing attempt missed.")
+                                                print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                                print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                                print(choice4.capitalize() + " gained 2 passive ult charge.")
+                                    counterp += 1
+                        elif rbhp == 'p':
+                            hhealer.mercyvar = 0
+                            newrbpower = (150 * hhealer.assist)
+                            enemya.health -= newrbpower
+                            if enemya.health <= 0:
+                                print(choice3.capitalize() + " is dead.")
+                                counterp += 1
+                                break
+                            else:
+                                print("You do %d damage." % newrbpower)
+                                print("You will not be healed next turn.")
+                                print("Your ultimate charge is reset to 0.")
+                                print(choice2.capitalize() + " gained 2 passive ult charge.")
+                                if choice3 == 'reaper':
+                                    if enemya.health >= 250:
+                                        thealer.mercyvar = 1
+                                    else:
+                                        thealer.mercyvar = 0
+                                        randomrb4 = random.randint(1, (enemya.dodge + 2))
+                                        if randomrb4 == 1:
+                                            enemya.health += thealer.heal
+                                            thealer.ultimate = int(thealer.heal * 0.20)
+                                            enemya.health = min(250, enemya.health)
+                                            print(choice4.capitalize() + "'s healing attempt connected.")
+                                            print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                        else:
+                                            thealer.ultimate = 0
+                                            print(choice4.capitalize() + "'s healing attempt missed.")
+                                            print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                            print(choice4.capitalize() + " gained 2 passive ult charge.")
+                                else:
+                                    if enemya.health >= 200:
+                                        thealer.mercyvar = 1
+                                    else:
+                                        thealer.mercyvar = 0
+                                        randomrb5 = random.randint(1, (enemya.dodge + 2))
+                                        if randomrb5 == 1:
+                                            enemya.health += thealer.heal
+                                            thealer.ultimate = int(thealer.heal * 0.20)
+                                            enemya.health = min(200, enemya.health)
+                                            print(choice4.capitalize() + "'s healing attempt connected.")
+                                            print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                        else:
+                                            thealer.ultimate = 0
+                                            print(choice4.capitalize() + "'s healing attempt missed.")
+                                            print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                            print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                            print(choice4.capitalize() + " gained 2 passive ult charge.")
+                                    counterp += 1
+                        else:
+                            print("Invalid answer.")
                 else:
-                    enemya.health += thealer.heal
-                    thealer.ultimate = int(thealer.heal * 0.10)
-                    print("Your barrage did 300 damage.")
-                    print("You were healed by %d" % hhealer.heal)
-                    print("Your ult charge is reset to 0 percent.")
-                    print(choice3.capitalize() + " was healed by %d." % thealer.heal)
-                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                    newrbpower1 = (150 * hhealer.assist)
+                    enemya.health -= newrbpower1
+                    # hhealer.ultimate = int((self.power * hhealer.heal)/2)
+                    if enemya.health <= 0:
+                        print(choice3.capitalize() + " is dead.")
+                    else:
+                        print("You do %d damage." % newrbpower1)
+                        print("You will be healed by %d next turn." % (hhealer.heal))
+                        print("Your ultimate charge is reset to 0.")
+                        print(choice2.capitalize() + " gained 2 passive ult charge.")
+                        if choice3 == 'reaper':
+                            if enemya.health >= 250:
+                                thealer.mercyvar = 1
+                            else:
+                                thealer.mercyvar = 0
+                                randomrb6 = random.randint(1, (enemya.dodge + 2))
+                                if randomrb6 == 1:
+                                    enemya.health += thealer.heal
+                                    thealer.ultimate = int(thealer.heal * 0.20)
+                                    enemya.health = min(250, enemya.health)
+                                    print(choice4.capitalize() + "'s healing attempt connected.")
+                                    print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                else:
+                                    thealer.ultimate = 0
+                                    print(choice4.capitalize() + "'s healing attempt missed.")
+                                    print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                    print(choice4.capitalize() + " gained 2 passive ult charge.")
+                        else:
+                            if enemya.health >= 200:
+                                thealer.mercyvar = 1
+                            else:
+                                thealer.mercyvar = 0
+                                randomrb7 = random.randint(1, (enemya.dodge + 2))
+                                if randomrb7 == 1:
+                                    enemya.health += thealer.heal
+                                    thealer.ultimate = int(thealer.heal * 0.20)
+                                    enemya.health = min(200, enemya.health)
+                                    print(choice4.capitalize() + "'s healing attempt connected.")
+                                    print("After healing, " + choice3.capitalize() + "'s health is %d." % enemya.health)
+                                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                else:
+                                    thealer.ultimate = 0
+                                    print(choice4.capitalize() + "'s healing attempt missed.")
+                                    print(choice3.capitalize() + "'s health is %d." % enemya.health)
+                                    print(choice3.capitalize() + " gained 2 passive ult charge.")
+                                    print(choice4.capitalize() + " gained 2 passive ult charge.")
+                pharah.ultcount -= 1
             else:
-                print("You missed.")
+                print("Rocket barrage has ended.")
     
     def healult(self, enemy):
         if choice2 == 'mercy':
@@ -828,15 +979,15 @@ class Talon(Attack):
         randomt = random.randint(1, (enemya.accuracy + heroa.dodge))
         if randomt == 1:
             if self.health > 0:
-                self.ultimate = int(self.power * 0.10)
+                self.ultimate = int(self.power * 0.20)
                 heroa.health -= self.power
                 print(choice3.capitalize() + " did %d damage." % self.power)
                 if thealer.mercyvar == 1:
                     randomta1 = random.randint(1, (heroa.dodge + 3))
                     if randomta1 == 1:
-                        thealer.ultimate = int(thealer.assist * 0.10)
+                        thealer.ultimate = int(thealer.assist * 0.20)
                         heroa.health -= thealer.assist
-                        print(choice3.capitalize() + " connected and did %d damage." % self.power)
+                        print(choice4.capitalize() + " connected and did %d damage." % thealer.assist)
                     else:
                         print(choice4.capitalize() + " missed.")
                 elif thealer.mercyvar == 0:
@@ -851,21 +1002,21 @@ class Talon(Attack):
                             print(hhealer.mercyvar)
                             if hhealer.mercyvar == 1:
                                 heroa.health += hhealer.heal
-                                hhealer.ultimate = int(hhealer.heal * 0.10)
+                                hhealer.ultimate = int(hhealer.heal * 0.20)
                                 heroa.health = min(150, heroa.health)
                         else:
                             heroa.health += hhealer.heal
-                            hhealer.ultimate = int(hhealer.heal * 0.10)
+                            hhealer.ultimate = int(hhealer.heal * 0.20)
                             heroa.health = min(150, heroa.health)
                     else:
                         if choice2 == 'mercy':
                             if hhealer.mercyvar == 1:
                                 heroa.health += hhealer.heal
-                                hhealer.ultimate = int(hhealer.heal * 0.10)
+                                hhealer.ultimate = int(hhealer.heal * 0.20)
                                 heroa.health = min(200, heroa.health)
                         else:
                             heroa.health += hhealer.heal
-                            hhealer.ultimate = int(hhealer.heal * 0.10)
+                            hhealer.ultimate = int(hhealer.heal * 0.20)
                             heroa.health = min(200, heroa.health)
                     print("After healing, your health is %d." % heroa.health)
                     print("You gained 2 passive ult charge.")
@@ -876,9 +1027,9 @@ class Talon(Attack):
             if thealer.mercyvar == 1:
                 randomta2 = random.randint(1, (heroa.dodge + 3))
                 if randomta2 == 1:
-                    thealer.ultimate = int(thealer.assist * 0.10)
+                    thealer.ultimate = int(thealer.assist * 0.20)
                     heroa.health -= thealer.assist
-                    print(choice3.capitalize() + " connected and did %d damage." % self.power)
+                    print(choice4.capitalize() + " connected and did %d damage." % thealer.assist)
                     if heroa.health <= 0:
                         print("You are dead.")
                     else:
@@ -887,24 +1038,24 @@ class Talon(Attack):
                                 print(hhealer.mercyvar)
                                 if hhealer.mercyvar == 1:
                                     heroa.health += hhealer.heal
-                                    hhealer.ultimate = int(hhealer.heal * 0.10)
+                                    hhealer.ultimate = int(hhealer.heal * 0.20)
                                     heroa.health = min(150, heroa.health)
                             else:
                                 heroa.health += hhealer.heal
-                                hhealer.ultimate = int(hhealer.heal * 0.10)
+                                hhealer.ultimate = int(hhealer.heal * 0.20)
                                 heroa.health = min(150, heroa.health)
                         else:
                             if choice2 == 'mercy':
                                 if hhealer.mercyvar == 1:
                                     heroa.health += hhealer.heal
-                                    hhealer.ultimate = int(hhealer.heal * 0.10)
+                                    hhealer.ultimate = int(hhealer.heal * 0.20)
                                     heroa.health = min(200, heroa.health)
                             else:
                                 heroa.health += hhealer.heal
-                                hhealer.ultimate = int(hhealer.heal * 0.10)
+                                hhealer.ultimate = int(hhealer.heal * 0.20)
                                 heroa.health = min(200, heroa.health)
                         print(choice3.capitalize() + " gained 2 passive charge.")
-                        print(choice4.capitalize() + " gained 2 passive charge.")
+                        print(choice4.capitalize() + " gained %d ult charge along with 2 passive charge." % thealer.ultimate)
                         print("After healing, your health is %d." % heroa.health)
                         print("You gained 2 passive ult charge.")
                         print(choice2.capitalize() + " gained %d ult charge along with 2 passive charge." % hhealer.ultimate)
@@ -915,21 +1066,21 @@ class Talon(Attack):
                             print(hhealer.mercyvar)
                             if hhealer.mercyvar == 1:
                                 heroa.health += hhealer.heal
-                                hhealer.ultimate = int(hhealer.heal * 0.10)
+                                hhealer.ultimate = int(hhealer.heal * 0.20)
                                 heroa.health = min(150, heroa.health)
                         else:
                             heroa.health += hhealer.heal
-                            hhealer.ultimate = int(hhealer.heal * 0.10)
+                            hhealer.ultimate = int(hhealer.heal * 0.20)
                             heroa.health = min(150, heroa.health)
                     else:
                         if choice2 == 'mercy':
                             if hhealer.mercyvar == 1:
                                 heroa.health += hhealer.heal
-                                hhealer.ultimate = int(hhealer.heal * 0.10)
+                                hhealer.ultimate = int(hhealer.heal * 0.20)
                                 heroa.health = min(200, heroa.health)
                         else:
                             heroa.health += hhealer.heal
-                            hhealer.ultimate = int(hhealer.heal * 0.10)
+                            hhealer.ultimate = int(hhealer.heal * 0.20)
                             heroa.health = min(200, heroa.health)
                     print("After healing, your health is %d." % heroa.health)
                     print("You gained 2 passive ult charge.")
@@ -941,21 +1092,21 @@ class Talon(Attack):
                         print(hhealer.mercyvar)
                         if hhealer.mercyvar == 1:
                             heroa.health += hhealer.heal
-                            hhealer.ultimate = int(hhealer.heal * 0.10)
+                            hhealer.ultimate = int(hhealer.heal * 0.20)
                             heroa.health = min(150, heroa.health)
                     else:
                         heroa.health += hhealer.heal
-                        hhealer.ultimate = int(hhealer.heal * 0.10)
+                        hhealer.ultimate = int(hhealer.heal * 0.20)
                         heroa.health = min(150, heroa.health)
                 else:
                     if choice2 == 'mercy':
                         if hhealer.mercyvar == 1:
                             heroa.health += hhealer.heal
-                            hhealer.ultimate = int(hhealer.heal * 0.10)
+                            hhealer.ultimate = int(hhealer.heal * 0.20)
                             heroa.health = min(200, heroa.health)
                     else:
                         heroa.health += hhealer.heal
-                        hhealer.ultimate = int(hhealer.heal * 0.10)
+                        hhealer.ultimate = int(hhealer.heal * 0.20)
                         heroa.health = min(200, heroa.health)
                 print("After healing, your health is %d." % heroa.health)
                 print("You gained 2 passive ult charge.")
@@ -1057,18 +1208,12 @@ ulth = 0
 healult = 0
 ulte = 0
 thealult = 0
-pultcount = 1
 while heroa.alive() and enemya.alive():
     while 1 == 1:
         if soldier.ultcount > 0:
             heroa.ultabl(enemya)
-        elif soldier.ultcount = 0:
-            print("Soldier's visor is now off.")
-        if pharah.ultcount == 1:
-            input("Press ENTER to continue barrage.")
+        if pharah.ultcount > 0:
             heroa.ultabl(enemya)
-            pultcount -= 1
-            break
         ulth = min(ulth, 100)
         healult = min(healult, 100)
         my_random = random.randint(1, 5)
@@ -1138,8 +1283,8 @@ while heroa.alive() and enemya.alive():
             if ulth == 100:
                 if soldier.ultcount == 0:
                     soldier.ultcount = 6
-                else:
-                    
+                if pharah.ultcount == 0:
+                    pharah.ultcount = 3
                 heroa.ultabl(enemya)
                 ulth = 0
                 healult += 2
@@ -1228,6 +1373,3 @@ while heroa.alive() and enemya.alive():
                 thealult += (2 + thealer.ultimate)
                 cooldowne += 1
                 break
-
-# fix hero healing during enemy turn
-# fix enemy death when killed by ult (game should completely end)
